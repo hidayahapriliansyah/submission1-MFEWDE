@@ -180,6 +180,7 @@ ul.menu {
 @media screen and (min-width: 1440px) {
   header {
     max-width: 1200px;
-    margin: auto;
+    left: 50%;
+    margin-left: -600px;  /* Negative half of width. */
   }
 }
