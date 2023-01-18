@@ -1,15 +1,22 @@
 
 header {
   position: fixed;
-  z-index: 10;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  z-index: 10;
   width: 100%;
   height: 80px;
   margin-top:-80px ;
   background-color: white;
   color: var(--white-primary);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #logo {
@@ -71,7 +78,6 @@ nav {
 
 .burger.x .line:nth-child(1) {
   width: 100%;
-  height: 4px;
   transform: translateX(4px) rotate(45deg);
 }
 
@@ -80,7 +86,6 @@ nav {
 }
 
 .burger.x .line:nth-child(3) {
-  height: 4px;
   transform: translateX(4px) rotate(-45deg);
 }
 
@@ -104,9 +109,10 @@ ul.menu {
   height: 300px;
   background-color: white;
   color: var(--text-primary);
-  transform: translateY(100%);
+  transform: translateX(100%);
   z-index: -10;
   border-radius: 25px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   transition: all 0.7s ease-in-out;
 }
 
@@ -169,6 +175,7 @@ ul.menu {
     height: fit-content;
     background-color: inherit;
     color: var(--text-primary);
+    box-shadow: none;
     opacity: 1;
     transform: translateY(0);
   }
@@ -179,9 +186,8 @@ ul.menu {
 }
 
 @media screen and (min-width: 1440px) {
-  header {
+  .header {
     max-width: 1200px;
-    left: 50%;
-    margin-left: -600px;  /* Negative half of width. */
+    margin: auto;
   }
 }

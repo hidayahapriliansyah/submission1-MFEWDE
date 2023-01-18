@@ -1,6 +1,7 @@
 import 'regenerator-runtime'; /* for async await transpile */
 import '../styles/main.css';
 import '../styles/navbar.css';
-import './event';
+import '../styles/content.css';
 
-console.log('Hello Coders! :)');
+import './event';
+import './render/render';
