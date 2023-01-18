@@ -26,7 +26,7 @@
 .tagline {
   width: 80%;
   max-width: 500px;
-  padding: 25px;
+  padding: 15px;
   background-color: #d20019de;
   color: var(--text-primary);
   backdrop-filter: blur(10px);
@@ -35,12 +35,12 @@
 }
 
 .tagline h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
+  font-size: 24px;
+  margin-bottom: 5px;
 }
 
 .tagline p {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .explore {
@@ -50,6 +50,7 @@
 }
 
 .explore h2 {
+  font-size: 18px;
   margin: 30px 0;
 }
 
@@ -96,7 +97,7 @@
   bottom: 0;
   width: 100%;
   height: 35%;
-  padding: 20px;
+  padding: 15px;
   background-color: white;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -115,6 +116,7 @@
   width: fit-content;
   background-color: white;
   font-weight: bold;
+  font-size: 14px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -124,9 +126,8 @@
 }
 
 .detail .rating {
-  margin-bottom: 5px;
   color: var(--red-primary);
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .detail .restaurant-name {
@@ -135,7 +136,7 @@
 }
 
 .detail .description {
-  line-height: 22px;
+  line-height: 16px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -167,7 +168,8 @@
 }
 
 .explore .card h3 a {
-  font-size: 25px;
+  font-size: 16px;
+  margin-bottom: -10px;
 }
 
 .hits {
@@ -176,6 +178,7 @@
 }
 
 .hits h2 {
+  font-size: 18px;
   margin-top: 70px;
 }
 
@@ -186,6 +189,7 @@
 }
 
 .hits .detail h3 {
+  font-size: 14px;
   max-width: 70%;
   white-space: nowrap;
   overflow: hidden;
@@ -225,6 +229,54 @@
 .card-hits:hover {
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   transform: translateY(-2%);
+}
+
+@media screen and (min-width: 425px) {
+  .tagline {
+    padding: 25px;
+  }
+
+  .tagline h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .tagline p {
+    font-size: 14px;
+  }
+
+  .explore h2 {
+    font-size: 24px;
+  }
+
+  .detail {
+    padding: 20px;
+  }
+
+  .card .city {
+    font-size: 16px;
+  }
+
+  .detail .rating {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+
+  .detail .description {
+    line-height: 22px;
+  }
+
+  .explore .card h3 a {
+    font-size: 24px;
+  }
+
+  .hits h2 {
+    font-size: 24px;
+  }
+
+  .hits .detail h3 {
+      font-size: 18px;
+  }
 }
 
 

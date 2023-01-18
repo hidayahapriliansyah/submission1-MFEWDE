@@ -5,7 +5,7 @@ const { restaurants } = data;
 const restaurantsCardGroup = document.querySelector('.explore .card-group');
 
 const excerpDescription = (description) => (
-  description.split(' ').slice(0, 25).join(' ')
+  description.split('').slice(0, 65).join('')
 );
 
 restaurantsCardGroup.innerHTML = restaurants.map((restaurant) => (
